@@ -1,0 +1,31 @@
+{
+    "name": "pavlakis/api-notts-digital",
+    "description": "Nottingham Digital groups list",
+    "homepage": "http://github.com/pavlakis/api-notts-digital",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Antonis Pavlakis",
+            "email": "adoni@pavlakis.info",
+            "homepage": "https://pavlakis.dev"
+        }
+    ],
+    "autoload-dev": {
+        "psr-4": {
+            "NottsDigital\\API\\tests\\" : "tests/phpunit"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "scripts": {
+        "test": "phpunit tests/ --colors=always"
+    },
+    "config": {
+        "bin-dir": "bin",
+        "preferred-install": {
+            "*": "dist"
+        }
+    }
+}
